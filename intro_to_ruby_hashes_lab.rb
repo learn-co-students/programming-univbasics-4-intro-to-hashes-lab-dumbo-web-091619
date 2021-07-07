@@ -1,9 +1,11 @@
 def new_hash
-  # return an empty hash
+new {|hash, key| block } → new_hash
 end
 
 def my_hash
-  # return a valid hash with any key/value pair of your choice
+  dictionary = { "one" => "eins"}
+  puts dictionary
+
 end
 
 def pioneer
@@ -15,7 +17,16 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
+h = {"colors"  => ["red", "blue", "green"],
+     "letters" => ["a", "b", "c" ]}
+h.assoc("letters")  
+h.assoc("foo")      
+end
+
+
+
+
+
 end
 
 def read_from_hash(hash, key)
